@@ -18,7 +18,7 @@ def renameOneFolder(src,startwith, endwith):
         #leave a note with date modified
         txtFile = os.path.join(src,'rename_deconvolution.txt')
         f = open(txtFile, 'w')    #w for creating a new txt
-        msg = 'modified time:' + time.strftime("%H:%M:%S")
+        msg = 'modified:' + time.strftime("%a, %d %b %Y, %H:%M:%S")
         f.write(msg)
         f.close()
         print '     Create a note txt'
